@@ -1,0 +1,106 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ---------------------< com.example:Spring-Lesson >----------------------
+[INFO] Building Spring-Lesson 0.0.1-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ Spring-Lesson ---
+[INFO] Deleting /Users/aiden/Desktop/Unit 8 - Spring/Module 1/Spring-Lesson2/target
+[INFO] 
+[INFO] >>> spring-boot:3.4.3:run (default-cli) > test-compile @ Spring-Lesson >>>
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ Spring-Lesson ---
+[INFO] Copying 1 resource from src/main/resources to target/classes
+[INFO] Copying 0 resource from src/main/resources to target/classes
+[INFO] 
+[INFO] --- compiler:3.13.0:compile (default-compile) @ Spring-Lesson ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 6 source files with javac [debug parameters release 17] to target/classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ Spring-Lesson ---
+[INFO] skip non existing resourceDirectory /Users/aiden/Desktop/Unit 8 - Spring/Module 1/Spring-Lesson2/src/test/resources
+[INFO] 
+[INFO] --- compiler:3.13.0:testCompile (default-testCompile) @ Spring-Lesson ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target/test-classes
+[INFO] 
+[INFO] <<< spring-boot:3.4.3:run (default-cli) < test-compile @ Spring-Lesson <<<
+[INFO] 
+[INFO] 
+[INFO] --- spring-boot:3.4.3:run (default-cli) @ Spring-Lesson ---
+[INFO] Attaching agents: []
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.3)
+
+2026-02-26T09:36:20.743-06:00  INFO 2932 --- [           main] c.e.s.SpringLessonApplication            : Starting SpringLessonApplication using Java 25.0.2 with PID 2932 (/Users/aiden/Desktop/Unit 8 - Spring/Module 1/Spring-Lesson2/target/classes started by aiden in /Users/aiden/Desktop/Unit 8 - Spring/Module 1/Spring-Lesson2)
+2026-02-26T09:36:20.751-06:00  INFO 2932 --- [           main] c.e.s.SpringLessonApplication            : No active profile set, falling back to 1 default profile: "default"
+2026-02-26T09:36:22.206-06:00  INFO 2932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-26T09:36:22.210-06:00  INFO 2932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JDBC repositories in DEFAULT mode.
+2026-02-26T09:36:22.280-06:00  INFO 2932 --- [           main] .RepositoryConfigurationExtensionSupport : Spring Data JDBC - Could not safely identify store assignment for repository candidate interface com.example.springlesson.bowling.BowlingRepository; If you want this repository to be a JDBC repository, consider annotating your entities with one of these annotations: org.springframework.data.relational.core.mapping.Table.
+2026-02-26T09:36:22.281-06:00  INFO 2932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 0 JDBC repository interfaces.
+2026-02-26T09:36:22.306-06:00  INFO 2932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode
+2026-02-26T09:36:22.308-06:00  INFO 2932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-26T09:36:22.367-06:00  INFO 2932 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interface.
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.apache.tomcat.jni.Library in an unnamed module (file:/Users/aiden/.m2/repository/org/apache/tomcat/embed/tomcat-embed-core/10.1.36/tomcat-embed-core-10.1.36.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+2026-02-26T09:36:23.500-06:00  INFO 2932 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 1234 (http)
+2026-02-26T09:36:23.535-06:00  INFO 2932 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-26T09:36:23.535-06:00  INFO 2932 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2026-02-26T09:36:23.644-06:00  INFO 2932 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-26T09:36:23.646-06:00  INFO 2932 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2774 ms
+2026-02-26T09:36:23.972-06:00  INFO 2932 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-26T09:36:24.083-06:00  INFO 2932 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2026-02-26T09:36:24.160-06:00  INFO 2932 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-26T09:36:24.790-06:00  INFO 2932 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-26T09:36:24.853-06:00  INFO 2932 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-26T09:36:25.264-06:00  INFO 2932 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:bowling user=SA
+2026-02-26T09:36:25.268-06:00  INFO 2932 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-26T09:36:25.398-06:00  INFO 2932 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-26T09:36:27.025-06:00  INFO 2932 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+Hibernate: drop table if exists bowling cascade 
+Hibernate: drop sequence if exists student_sequence
+Hibernate: create sequence student_sequence start with 1 increment by 1
+Hibernate: create table bowling (average integer, id bigint not null, email varchar(255), name varchar(255), primary key (id))
+2026-02-26T09:36:27.103-06:00  INFO 2932 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-26T09:36:27.624-06:00  INFO 2932 --- [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-02-26T09:36:29.380-06:00  INFO 2932 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 1234 (http) with context path '/'
+2026-02-26T09:36:29.397-06:00  INFO 2932 --- [           main] c.e.s.SpringLessonApplication            : Started SpringLessonApplication in 9.632 seconds (process running for 10.538)
+Hibernate: select next value for student_sequence
+Hibernate: insert into bowling (average,email,name,id) values (?,?,?,?)
+2026-02-26T09:36:31.872-06:00  INFO 2932 --- [nio-1234-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-02-26T09:36:31.873-06:00  INFO 2932 --- [nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-02-26T09:36:31.879-06:00  INFO 2932 --- [nio-1234-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+Hibernate: select b1_0.id,b1_0.average,b1_0.email,b1_0.name from bowling b1_0
+Hibernate: select b1_0.id,b1_0.average,b1_0.email,b1_0.name from bowling b1_0
+Hibernate: select b1_0.id,b1_0.average,b1_0.email,b1_0.name from bowling b1_0
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD FAILURE
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  01:06 min
+[INFO] Finished at: 2026-02-26T09:37:17-06:00
+[INFO] ------------------------------------------------------------------------
+[ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.4.3:run (default-cli) on project Spring-Lesson: Process terminated with exit code: 137 -> [Help 1]
+[ERROR] 
+[ERROR] To see the full stack trace of the errors, re-run Maven with the -e switch.
+[ERROR] Re-run Maven using the -X switch to enable full debug logging.
+[ERROR] 
+[ERROR] For more information about the errors and possible solutions, please read the following articles:
+[ERROR] [Help 1] http://cwiki.apache.org/confluence/display/MAVEN/MojoExecutionException
