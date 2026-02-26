@@ -18,7 +18,7 @@ public class BowlingControllerTest {
 
     @Test
     public void registerBowler() {
-        Bowling bowling = new Bowling("John Doe", "john@example.com", 200);
+        BowlingDTO bowling = new BowlingDTO("John Doe", "john@example.com", 200);
         bowlingController.registerNewBowling(bowling);
         
         assertTrue(bowlingRepository.findAll().stream()
@@ -27,12 +27,12 @@ public class BowlingControllerTest {
 
     @Test
     public void emailError() {
-        Bowling bowling1 = new Bowling("John Doe", "unique@example.com", 200);
+        BowlingDTO bowling1 = new BowlingDTO("John Doe", "unique@example.com", 200);
         bowlingController.registerNewBowling(bowling1);
 
-        Bowling bowling2 = new Bowling("Jane Doe", "unique@example.com", 210);
-        
-        assertThrows(IllegalStateException.class, () -> {
+        BowlingDTO bowling2 = new BowlingDTO("Jane Doe", "unique@example.com", 210);
+
+        assertThrows(ConflictException.class, () -> {
             bowlingController.registerNewBowling(bowling2);
         });
     }
